@@ -1,0 +1,12 @@
+{
+  "name": "extra-oefeningen-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "sass ./style.scss ./style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- HTML VOOR OEF1 -->
+    <template id="oef1">
+      <h1>Oef 1</h1>
+      <label for="postcode">postcode: </label>
+      <input type="text" name="postcode" id="postcode" /><br />
+      <label for="landcode">landcode: </label>
+      <input type="text" name="landcode" id="landcode" /><br />
+      <button class="knop1">Geef info</button>
+      <span id="resultaatOef1"></span>
+      <hr />
+    </template>
+    <template id="oef2">
+      <h1>Oef 2</h1>
+      <label for="gemeente">gemeente: </label>
+      <br />
+      <input type="text" name="gemeente" id="gemeente" /><br />
+      <button class="knop2">toon temperaturen</button>
+      <p class="oef2loading hidden">LOADING...</p>
+      <span id="resultaatOef2"></span>
+      <hr />
+    </template>
+    <template id="oef31">
+      <h1>OEF3</h1>
+      <button class="knopOef3">klik mij 5 keer</button>
+      <ul class="grid3"></ul>
+      <hr />
+    </template>
+    <template id="oef32">
+      <li>
+        <img src="%img%" alt="" />
+      </li>
+    </template>
+    <template id="oef4">
+      <h1>OEF 4</h1>
+      <button class="knopOef4">toon 9 honden</button>
+      <ul class="grid4"></ul>
+      <hr />
+    </template>
+  </body>
+</html>

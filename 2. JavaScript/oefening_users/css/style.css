@@ -1,0 +1,16 @@
+.title {
+  text-align: center;
+}
+.columns {
+  gap: 50px;
+}
+.column {
+  background-color: red;
+}
+
+.column * {
+  pointer-events: none;
+}
+.column a {
+  pointer-events: all;
+}

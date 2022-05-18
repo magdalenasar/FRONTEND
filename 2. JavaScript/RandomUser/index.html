@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="hero is-link">
+        <div class="hero-body">
+          <p class="title">🕵🏽‍♀️ Random user generator</p>
+          <p class="subtitle">JavaScript Project</p>
+          <!--FORM-->
+            <form id="myForm" action="">
+              <div class="field has-addons">
+                <p class="control ">
+                  <input
+                    class="input"
+                    id="zoekString"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                </p>
+                <p class="control">
+                  <button type="submit" class="button">🔎 </button>
+                </p>
+              </div>
+            </form>
+              <!--FORM-->
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>      
+      <div class="columns is-multiline"></div>
+    </div>
+    <template>
+      <div class="column is-one-quarter">
+        <div class="card">
+          <div class="card-image">
+            <h2 id="name">@name@</h2>
+            <h3>@gender@</h3>
+            <h3>@email@</h3>
+            <h3>@nat@</h3>
+            <figure class="image is-3by4">
+              <img src="@thumbnail@" alt="@name@" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </template>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>syntra movie app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- FORM -->
+      <div class="block">
+        <form action="">
+          <div class="field has-addons">
+            <div class="control is-expanded">
+              <input
+                class="input"
+                type="text"
+                placeholder="Search for a movie"
+              />
+            </div>
+            <div class="control">
+              <button type="submit" class="button is-info">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- TITLE -->
+      <h1 class="title">Trending movies</h1>
+      <!-- GRID -->
+      <div class="columns is-3 is-multiline"></div>
+      <!-- PAGINATION -->
+      <div class="block">
+        <nav
+          class="pagination hidden"
+          role="navigation"
+          aria-label="pagination"
+        >
+          <a
+            href=""
+            class="pagination-previous is-disabled"
+            title="This is the first page"
+            >Previous</a
+          >
+          <p>1/20 - 211</p>
+          <a href="" class="pagination-next">Next page</a>
+        </nav>
+      </div>
+      <!-- TEMPLATES -->
+      <template id="griditem">
+        <div
+          class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd"
+        >
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by6">
+                <img
+                  src="https://image.tmdb.org/t/p/w500%image%"
+                  alt="%title%"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p>%title%</p>
+                <small>(%genres%)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

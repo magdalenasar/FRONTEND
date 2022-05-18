@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(234, 231, 255);
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 1%;
+}
+
+.card {
+  padding: 2%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  transition: 0.5s all ease-in-out;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  margin-top: 1%;
+  object-fit: cover;
+}

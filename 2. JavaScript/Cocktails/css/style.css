@@ -1,0 +1,24 @@
+.card-image h2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.is-3by4 img {
+  object-fit: cover;
+}
+.card-image * {
+  pointer-events: none;
+}
+.columns {
+  padding: 2rem 0;
+}
+.modal-content * {
+  color: white !important;
+  overflow: hidden;
+}

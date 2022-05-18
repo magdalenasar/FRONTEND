@@ -1,0 +1,22 @@
+<boeken>
+    <boek>
+        <titel>Een boek</titel>
+        <auteur>Naam van auteur</auteur>
+    </boek>
+    <boek>
+        <titel>Een boek</titel>
+        <auteur>Naam van auteur</auteur>
+    </boek>
+    <boek>
+        <titel>Een boek</titel>
+        <auteur>Naam van auteur</auteur>
+    </boek>
+    <boek>
+        <titel>Een boek</titel>
+        <auteur>Naam van auteur</auteur>
+    </boek>
+    <boek>
+        <titel>Een boek</titel>
+        <auteur>Naam van auteur</auteur>
+    </boek>                
+</boeken>
