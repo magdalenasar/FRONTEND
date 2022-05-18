@@ -1,0 +1,57 @@
+/*
+    resetten van de standaard browser-specifieke 
+    margin op alle elementen
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* achtergrond van body zwart */
+body {
+  background-color: #000;
+}
+/* breedte van main-zone vast op 1000px maar wel gecentreerd binnen de body */
+main {
+  width: 1000px;
+  min-height: 2000px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 48px 70px 28px 70px;
+}
+h1 {
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+h2 {
+  color: #ff1b30;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+p {
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 12px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+li {
+  line-height: 30px;
+  font-size: 16px;
+  list-style-image: url(../images/bg_listitem.jpg);
+}
+@media screen and (max-width: 1040px) {
+}

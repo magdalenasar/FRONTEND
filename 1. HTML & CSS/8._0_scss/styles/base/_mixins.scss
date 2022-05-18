@@ -1,0 +1,22 @@
+@mixin font($size: 18px) {
+  font-family: verdana;
+  font-weight: bold;
+  font-size: $size;
+  text-transform: uppercase;
+}
+
+@mixin make-cols($base: 100px, $gap: 10px, $bw, $bc) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  > * {
+    flex-basis: $base;
+    flex-grow: 1;
+    border-width: $bw;
+    border-style: solid;
+    border-color: $bc;
+    img {
+      @extend .resp;
+    }
+  }
+}

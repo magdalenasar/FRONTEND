@@ -1,0 +1,105 @@
+/* variables */
+/* nesting */
+/* extend */
+/* mixins */
+/* partials met import/use */
+@import "./base/variables";
+@use "./base/variables" as *;
+@use "./base/extends" as *;
+@use "./base/mixins" as *;
+
+h1 {
+  color: $blue;
+}
+
+.field {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  &__label {
+    font-family: verdana;
+    background-color: purple;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px;
+  }
+  &__input {
+    background-color: white;
+    border: 1px solid purple;
+    padding: 5px;
+    color: purple;
+    outline: none;
+    &--search {
+      padding-left: 50px;
+      background-image: url("https://loremflickr.com/50/50/search");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  &--vertical {
+    flex-direction: column;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-family: verdana;
+  font-size: 18px;
+  border-width: 0px;
+  border-color: black;
+  border-style: solid;
+  &--primary {
+    background-color: rgb(0, 123, 252);
+    border-color: rgb(0, 123, 252);
+  }
+  &--secondary {
+    background-color: rgb(110, 117, 123);
+    border-color: rgb(110, 117, 123);
+  }
+  &--success {
+    background-color: rgb(40, 166, 66);
+    border-color: rgb(40, 166, 66);
+  }
+  &--danger {
+    background-color: rgb(220, 54, 66);
+    border-color: rgb(220, 54, 66);
+  }
+  &--warning {
+    background-color: rgb(255, 193, 10);
+    color: black;
+    border-color: rgb(255, 193, 10);
+  }
+  &--outline {
+    border-width: 1px;
+    background-color: white;
+    &.btn--primary {
+      color: rgb(0, 123, 252);
+    }
+    &.btn--success {
+      color: rgb(40, 166, 66);
+    }
+    &.btn--secondary {
+      color: rgb(110, 117, 123);
+    }
+    &.btn--danger {
+      color: rgb(220, 54, 66);
+    }
+    &.btn--warning {
+      color: rgb(255, 193, 10);
+    }
+  }
+}

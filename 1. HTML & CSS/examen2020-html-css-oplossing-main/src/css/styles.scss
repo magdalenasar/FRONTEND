@@ -1,0 +1,254 @@
+@use "./base/reset";
+@use "./base/fonts";
+@use "./base/variables" as *;
+@use "./base/mixins" as *;
+
+@import "../../icons/style.css";
+
+.container {
+  max-width: 1171px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: top center;
+  .container {
+    display: flex;
+    padding-top: 39px;
+    align-items: center;
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 58px;
+      color: $wit;
+      text-decoration: none;
+      span {
+        @include font($raleway, 400, $wit, 34px);
+        margin-left: 26px;
+      }
+    }
+    nav {
+      margin-left: auto;
+      margin-right: 85px;
+      ul {
+        display: flex;
+        li {
+          margin: 0 13px;
+          a {
+            padding: 10px;
+            @include font($montserrat, 300, $wit, 14px);
+            text-decoration: none;
+            transition: color 250ms;
+            &.active,
+            &:hover {
+              color: #c7b299;
+            }
+          }
+        }
+      }
+    }
+    .search {
+      color: $wit;
+      font-size: 27px;
+    }
+  }
+  .slider {
+    text-align: center;
+    width: 580px;
+    margin: 0 auto;
+    margin-top: 270px;
+    h2 {
+      @include font($raleway, 500, $wit, 36px);
+      margin-bottom: 9px;
+    }
+    h1 {
+      @include font($raleway, 800, $wit, 52px);
+      margin-bottom: 18px;
+    }
+    p {
+      @include font($montserrat, 300, $wit, 16px);
+      margin-bottom: 45px;
+      line-height: 24px;
+    }
+    button {
+      @include font($raleway, 800, $wit, 14px);
+      background-color: $bruin;
+      height: 50px;
+      outline: none;
+      line-height: 50px;
+      border-radius: 3px;
+      padding: 0 50px;
+      border-width: 0px;
+      cursor: pointer;
+      text-transform: uppercase;
+      //border-bottom: 3px solid $donkerbruin;
+      box-shadow: 0 3px $donkerbruin;
+    }
+    a.left,
+    a.right {
+      color: $bruin;
+      font-size: 75px;
+      position: absolute;
+      left: 150px;
+      top: calc(50% - 37.5px);
+    }
+    a.right {
+      left: auto;
+      right: 150px;
+    }
+    .sliderNav {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 40px;
+      ul {
+        display: flex;
+        li {
+          a {
+            background-color: rgba($donkerbruin, 0.5);
+            width: 10px;
+            text-decoration: none;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            display: block;
+            &.active,
+            &:hover {
+              border-color: $donkerbruin;
+            }
+          }
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+}
+main {
+  min-height: 250px;
+  background-color: $wit;
+  .container {
+    @include make-col(4, 28px);
+    padding: 80px 0px;
+    article {
+      text-align: center;
+      font-size: 50px;
+      color: $grijs;
+      position: relative;
+      &.active,
+      &:hover {
+        color: $donkerbruin;
+      }
+      &:after {
+        content: "";
+        bottom: -30px;
+        height: 4px;
+        background-color: $bruin;
+        position: absolute;
+        width: 70px;
+        left: calc(50% - 35px);
+      }
+      h2 {
+        @include font($raleway, 600, $bruin, 22px);
+        margin-top: 27px;
+        margin-bottom: 20px;
+      }
+      p {
+        @include font($montserrat, 300, $lichtgrijs, 14px);
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  header .slider a.right {
+    right: 50px;
+  }
+  header .slider a.left {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  header .container nav {
+    margin-right: 55px;
+  }
+  header .container nav ul li {
+    margin: 0 7px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 95%;
+  }
+  .search {
+    display: none;
+  }
+  header .container nav {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  main .container {
+    @include make-col(2, 100px);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  header .slider a.right {
+    right: 20px;
+  }
+  header .slider a.left {
+    left: 20px;
+  }
+  header .slider {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .slider a.left,
+  header .slider a.right {
+    display: none;
+  }
+  main .container {
+    @include make-col(2, 30px);
+    > article {
+      margin-bottom: 64px !important;
+    }
+  }
+}
+
+@media screen and (max-height: 880px) {
+  header .slider {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  header .slider {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  main .container {
+    @include make-col(1, 30px);
+  }
+}

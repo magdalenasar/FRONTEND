@@ -1,0 +1,51 @@
+@use "./base/reset";
+@use "./base/extends";
+@use "./base/variables" as *;
+@use "./base/fonts" as *;
+@use "./base/mixins" as *;
+@use "./icons/icons";
+
+body {
+  background-color: $bodybg;
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 550px;
+}
+
+.form {
+  background-color: $green;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  &__input {
+    height: 65px;
+    background-color: $lightgreen;
+    border-width: 0px;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 25px;
+    @include font;
+    width: calc(100% - 32.5px);
+  }
+  &__submit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 1px solid $greenborder;
+  }
+}
+
+.list {
+  &__item {
+    min-height: 20px;
+    background-color: $white;
+    margin-bottom: 12px;
+  }
+}

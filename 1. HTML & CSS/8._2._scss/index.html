@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1>BEM: Block Element Modifier</h1>
+
+    <div class="field">
+      <label class="field__label" for="firstname">Voornaam: </label>
+      <input class="field__input" type="text" name="fn" id="firstname" />
+    </div>
+    <div class="field">
+      <label class="field__label" for="lastname">naam: </label>
+      <input class="field__input" type="text" name="ln" id="lastname" />
+    </div>
+    <div class="field">
+      <label class="field__label" for="search">zoek: </label>
+      <input
+        class="field__input field__input--search"
+        type="text"
+        name="s"
+        id="search"
+      />
+    </div>
+    <!-- <form action="" class="form">
+      <input type="text" class="form__input" name="" id="">     
+      <input type="submit" class="form__submit" value="">
+   </form>
+   <ul class="list">
+     <li class="list__item">
+        <span class="list__item__text">Gras afrijden</span>
+        <a href="" class="list__item__icon list__item__icon--garbage"></a>
+        <a href="" class="list__item__icon list__item__icon--edit"></a>
+     </li>
+   </ul> -->
+
+    <div class="btns">
+      <button class="btn btn--primary">Primary</button>
+      <button class="btn btn--secondary">dsdsdsd</button>
+      <button class="btn btn--success">sdsdsd</button>
+      <button class="btn btn--danger">dsdsdsds</button>
+      <button class="btn btn--warning">dsdsdsds</button>
+      <button class="btn btn--primary btn--outline">Primary</button>
+      <button class="btn btn--secondary btn--outline">dsdsdsd</button>
+      <button class="btn btn--success btn--outline">sdsdsd</button>
+      <button class="btn btn--danger btn--outline">dsdsdsds</button>
+      <button class="btn btn--warning btn--outline">dsdsdsds</button>
+    </div>
+  </body>
+</html>

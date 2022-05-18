@@ -1,0 +1,50 @@
+/* variables */
+/* nesting */
+/* extend */
+/* mixins */
+/* partials */
+
+@import "./base/variables";
+@import "./base/extends";
+@import "./base/mixins";
+
+section.raster {
+  @include make-cols(350px, 50px, 15px, $orange);
+}
+
+h1 {
+  color: $blue;
+  border: 2px solid $yellow;
+  font-size: $size;
+  background-color: $orange;
+}
+
+h2 {
+  @include font(22px);
+}
+
+ul {
+  margin: 50px 0;
+  li {
+    list-style-type: square;
+    &.special {
+      list-style-type: circle;
+    }
+    a {
+      color: $orange;
+      text-transform: uppercase;
+      font-size: 16px;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+main {
+  section {
+    img {
+      @extend .resp;
+    }
+  }
+}

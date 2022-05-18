@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--to validate against HTML5, prevent getting favicon.ico error in the browser-->
+    <link rel="shortcut icon" href="#" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Splitter Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="that is a logo" />
+      </div>
+
+      <div class="canvas">
+        <div class="input">
+          <div class="bill-container">
+            <div class="label-wrapper">
+              <label for="input-bill">Bill</label>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                class="input-text"
+                type="text"
+                name="input-bill"
+                id="input-bill"
+                placeholder="0.00"
+              />
+              <img src="./images/icon-dollar.svg" alt="currency-icon_dollar" />
+            </div>
+          </div>
+
+          <div class="tip-container">
+            <div class="label-wrapper">
+              <label for="input-tip">Select Tip %</label>
+            </div>
+            <div class="btn-wrapper">
+              <div class="btn">5%</div>
+              <div class="btn">10%</div>
+              <div class="btn btn-active">15%</div>
+              <div class="btn">25%</div>
+              <div class="btn">50%</div>
+              <input
+                class="input-text"
+                type="text"
+                name="input-tip"
+                id="input-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <div class="people-container">
+            <div class="label-wrapper">
+              <label for="input-people">Number of People</label>
+              <div class="error-msg">Can't be zero</div>
+            </div>
+
+            <div class="input-wrapper">
+              <input
+                class="input-text"
+                type="text"
+                name="input-people"
+                id="input-people"
+                placeholder="1"
+              />
+              <img src="./images/icon-person.svg" alt="icon_person" />
+            </div>
+          </div>
+        </div>
+
+        <div class="output">
+          <div class="line-wrapper">
+            <div class="line-output">
+              <div class="title-wrapper">
+                <div class="title">Tip amount</div>
+                <div class="desc">/person</div>
+              </div>
+            </div>
+            <div class="value">$4.27</div>
+          </div>
+
+          <div class="line-wrapper">
+            <div class="line-output">
+              <div class="title-wrapper">
+                <div class="title">Total</div>
+                <div class="desc">/person</div>
+              </div>
+            </div>
+            <div class="value">$32.79</div>
+          </div>
+
+          <div class="btn">RESET</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

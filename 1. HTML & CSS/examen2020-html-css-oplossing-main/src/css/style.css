@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@400;500;600;800&display=swap");
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+.icon-left {
+  width: 0.548828125em;
+}
+
+.icon-logo {
+  width: 1.1435546875em;
+}
+
+.icon-right {
+  width: 0.548828125em;
+}
+
+.icon-stack {
+  width: 1.09375em;
+}
+
+.icon-suitcase {
+  width: 1.427734375em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1171px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+header .container {
+  display: flex;
+  padding-top: 39px;
+  align-items: center;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  font-size: 58px;
+  color: #fff;
+  text-decoration: none;
+}
+header .container .logo span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 34px;
+  margin-left: 26px;
+}
+header .container nav {
+  margin-left: auto;
+  margin-right: 85px;
+}
+header .container nav ul {
+  display: flex;
+}
+header .container nav ul li {
+  margin: 0 13px;
+}
+header .container nav ul li a {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 250ms;
+}
+header .container nav ul li a.active, header .container nav ul li a:hover {
+  color: #c7b299;
+}
+header .container .search {
+  color: #fff;
+  font-size: 27px;
+}
+header .slider {
+  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+  margin-top: 270px;
+}
+header .slider h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 9px;
+}
+header .slider h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 52px;
+  margin-bottom: 18px;
+}
+header .slider p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 45px;
+  line-height: 24px;
+}
+header .slider button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 14px;
+  background-color: #998675;
+  height: 50px;
+  outline: none;
+  line-height: 50px;
+  border-radius: 3px;
+  padding: 0 50px;
+  border-width: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 3px #736357;
+}
+header .slider a.left,
+header .slider a.right {
+  color: #998675;
+  font-size: 75px;
+  position: absolute;
+  left: 150px;
+  top: calc(50% - 37.5px);
+}
+header .slider a.right {
+  left: auto;
+  right: 150px;
+}
+header .slider .sliderNav {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+}
+header .slider .sliderNav ul {
+  display: flex;
+}
+header .slider .sliderNav ul li {
+  margin: 0 4px;
+}
+header .slider .sliderNav ul li a {
+  background-color: rgba(115, 99, 87, 0.5);
+  width: 10px;
+  text-decoration: none;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  display: block;
+}
+header .slider .sliderNav ul li a.active, header .slider .sliderNav ul li a:hover {
+  border-color: #736357;
+}
+
+main {
+  min-height: 250px;
+  background-color: #fff;
+}
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0px;
+}
+main .container > *:nth-child(1n+0) {
+  width: calc(calc(100% - 84px) / 4);
+  margin: 0 28px 28px 0;
+}
+main .container > *:nth-child(4n+0) {
+  margin-right: 0;
+}
+main .container article {
+  text-align: center;
+  font-size: 50px;
+  color: #555555;
+  position: relative;
+}
+main .container article.active, main .container article:hover {
+  color: #736357;
+}
+main .container article:after {
+  content: "";
+  bottom: -30px;
+  height: 4px;
+  background-color: #998675;
+  position: absolute;
+  width: 70px;
+  left: calc(50% - 35px);
+}
+main .container article h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #998675;
+  font-size: 22px;
+  margin-top: 27px;
+  margin-bottom: 20px;
+}
+main .container article p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1550px) {
+  header .slider a.right {
+    right: 50px;
+  }
+
+  header .slider a.left {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  header .container nav {
+    margin-right: 55px;
+  }
+
+  header .container nav ul li {
+    margin: 0 7px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 95%;
+  }
+
+  .search {
+    display: none;
+  }
+
+  header .container nav {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .container > *:nth-child(1n+0) {
+    width: calc(calc(100% - 100px) / 2);
+    margin: 0 100px 100px 0;
+  }
+  main .container > *:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 930px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 880px) {
+  header .slider a.right {
+    right: 20px;
+  }
+
+  header .slider a.left {
+    left: 20px;
+  }
+
+  header .slider {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .slider a.left,
+header .slider a.right {
+    display: none;
+  }
+
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .container > *:nth-child(1n+0) {
+    width: calc(calc(100% - 30px) / 2);
+    margin: 0 30px 30px 0;
+  }
+  main .container > *:nth-child(2n+0) {
+    margin-right: 0;
+  }
+  main .container > article {
+    margin-bottom: 64px !important;
+  }
+}
+@media screen and (max-height: 880px) {
+  header .slider {
+    margin-top: 120px;
+  }
+}
+@media screen and (max-height: 640px) {
+  header .slider {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 510px) {
+  main .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .container > *:nth-child(1n+0) {
+    width: calc(calc(100% - 0px) / 1);
+    margin: 0 30px 30px 0;
+  }
+  main .container > *:nth-child(1n+0) {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
