@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "id": "123",
+      "name": "Iphone",
+      "foto": ""
+    },
+    {
+      "id": "777",
+      "name": "Tesla",
+      "foto": ""
+    },
+    {
+      "id": "991",
+      "name": "dogtoy",
+      "foto": ""
+    }
+  ],
+  "comments": [
+    {
+      "id": "788",
+      "product_id": "123",
+      "comment": "toptelefoon batterij wel snel plat"
+    },
+    {
+      "id": "780",
+      "product_id": "123",
+      "comment": "floptelefoon"
+    },
+    {
+      "id": "900",
+      "product_id": "123",
+      "comment": "ios suckt"
+    },
+    {
+      "id": "1001",
+      "product_id": "777",
+      "comment": "Tesla is cool :) ."
+    }
+  ]
+}

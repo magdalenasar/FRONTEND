@@ -1,0 +1,13 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dbjson": "json-server --watch ./db.json --port 1234 --delay 500",
+    "dbmysql": "xmysql -h localhost -u root -p root -d productdb"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
