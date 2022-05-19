@@ -19,6 +19,8 @@
    - Axios;
 3. Backend:
    - [Maurits van der Schee php-crud-api repo](https://github.com/mevdschee/php-crud-api)
+   
+<img width="1263" alt="169169401-8e3f92ff-8339-4027-ac1c-bf42f3daeba5" src="https://user-images.githubusercontent.com/91531129/169177344-e2e5f726-4e91-4839-9c6e-409936d831f9.png">
 
 # Notities voor nieuwe React App op te zetten:
 
