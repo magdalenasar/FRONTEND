@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "111",
+      "checked": false,
+      "todo": "gras afrijden"
+    },
+    {
+      "id": "222",
+      "checked": true,
+      "todo": "tv kijken en chips eten"
+    }
+  ],
+  "friends": [
+    {
+      "id": "564",
+      "name": "Bert"
+    },
+    {
+      "id": "5656",
+      "name": "Johan"
+    }
+  ]
+}

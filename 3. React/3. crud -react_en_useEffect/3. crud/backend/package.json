@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 1234"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

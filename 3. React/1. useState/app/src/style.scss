@@ -1,0 +1,22 @@
+.person {
+  background-color: rgb(227, 252, 196);
+  padding: 10px;
+  margin-bottom: 50px;
+  &__name {
+    text-transform: uppercase;
+  }
+}
+
+.person1 {
+  background-color: rgb(167, 190, 211);
+}
+.input {
+  background-color: green;
+  &--error {
+    background-color: red;
+  }
+}
+
+.checked {
+  text-decoration: line-through;
+}

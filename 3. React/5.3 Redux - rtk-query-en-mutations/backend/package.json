@@ -1,0 +1,12 @@
+{
+  "name": "rtk-query-en-mutations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch ./todos.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

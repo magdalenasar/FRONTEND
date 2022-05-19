@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": "aJdR5",
+      "todo": "vsdvsdvsdv",
+      "checked": true
+    },
+    {
+      "id": "CHaRe",
+      "todo": "dsvsdvsdv",
+      "checked": false
+    }
+  ],
+  "vrienden": [
+    {
+      "id": "123",
+      "name": "Jorne"
+    },
+    {
+      "id": "124",
+      "name": "Aron"
+    }
+  ]
+}

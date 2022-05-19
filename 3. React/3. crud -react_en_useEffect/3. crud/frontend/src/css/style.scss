@@ -1,0 +1,182 @@
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/variables";
+@import "./base/mixins";
+
+body {
+  background-color: $bg;
+  margin-top: 28px;
+  font-family: $primary-font;
+}
+.todoApp {
+  width: 75%;
+  max-width: 850px;
+  min-width: 300px;
+  margin: 0 auto;
+  &__form {
+    background-color: $green;
+    border-radius: 10px;
+    padding: 19px;
+    position: relative;
+    &__input {
+      display: block;
+      width: 100%;
+      border: 0;
+      height: 65px;
+      background-color: rgba($white, 0.3);
+      padding: 0 75px 0 26px;
+      color: $white;
+      border-radius: 7px;
+      border-top-right-radius: 32.5px;
+      border-bottom-right-radius: 32.5px;
+      transition: all 300ms;
+      &--error {
+        background-color: $red;
+      }
+      &::placeholder {
+        color: $white;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+      }
+    }
+    &__button {
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 19px;
+      top: 19px;
+      width: 65px;
+      height: 65px;
+      background-color: $white;
+      border-radius: 50%;
+      transition: all 300ms;
+      &::after {
+        position: absolute;
+        content: "\e802";
+        font-family: icons;
+        color: $green;
+        font-size: 28px;
+        top: 50%;
+        left: 50%;
+        margin-left: -8px;
+        margin-top: -14px;
+      }
+      &:hover {
+        background-color: $bg;
+      }
+    }
+  }
+  &__list {
+    padding: 19px;
+    &__item {
+      background-color: $white;
+      margin-bottom: 13px;
+      padding: 14px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      &--checked {
+        .todoApp__list__item__text {
+          text-decoration: line-through rgba($green, 0.85);
+          &::before {
+            content: ".";
+            color: $white;
+          }
+          &::after {
+            content: ".";
+            color: $white;
+          }
+        }
+        .icon--check::after {
+          background-color: $green;
+          color: $white;
+        }
+      }
+      &__text {
+        color: black;
+        max-height: 65px;
+        overflow: hidden;
+        padding-right: 20px;
+        flex-grow: 1; /* this text should always have max width */
+      }
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  flex-shrink: 0; /* should never get smaller */
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: 24px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: $grey;
+    left: -12px;
+    top: 0;
+    pointer-events: none;
+    margin: 0;
+  }
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 28px;
+    color: $green;
+    font-family: icons;
+    margin-top: -14px;
+  }
+  &:first-of-type {
+    &::before {
+      display: none;
+    }
+  }
+  &--remove {
+    &::after {
+      transition: all 300ms;
+      content: "\e800";
+      margin-left: -12.25px;
+      color: $grey;
+    }
+    &:hover::after {
+      color: $red;
+    }
+  }
+
+  &--check {
+    &::after {
+      transition: all 300ms;
+      content: "\e801";
+      margin-left: -12.89px;
+    }
+    &:hover::after {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  &--circular {
+    &::after {
+      font-size: 13px;
+      border-radius: 50%;
+      border: 2px solid $green;
+      padding: 7px 9px 9px 7px;
+      margin-left: -15px;
+      margin-top: -16px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .todoApp {
+    width: 98%;
+  }
+}
